@@ -1,10 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Button  */
 .btn {
   display: inline-block;
   padding: 0.75rem 1.5rem;
   border: none;
   border-radius: 0.375rem;
-  font-weight: 600;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -41,14 +58,14 @@
   background-color: #0f766e;
 }
 
-/* Navigation */
-.nav {
+/* Navigationbar */
+.navbar {
   background-color: white;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   padding: 1rem 0;
 }
 
-.nav-container {
+.navbar-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
@@ -57,7 +74,7 @@
   align-items: center;
 }
 
-.nav-brand {
+.navbar-brand {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -75,29 +92,29 @@
   font-size: 1.125rem;
 }
 
-.nav-links {
+.navbar-links {
   display: none;
   gap: 1.5rem;
 }
 
-.nav-link {
-  color: #6b7280;
+.navbar-link {
+  color: #747b8a;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
-.nav-link:hover {
+.navbar-link:hover {
   color: #0d9488;
 }
 
 @media (min-width: 768px) {
-  .nav-links {
+  .navbar-links {
     display: flex;
   }
 }
 
-/* Hero Section */
-.hero {
+/* first Section */
+.first {
   position: relative;
   background-color: #1f2937;
   color: white;
@@ -105,27 +122,27 @@
   text-align: center;
 }
 
-.hero-overlay {
+.first-overlay {
   position: absolute;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.hero-content {
+.first-content {
   position: relative;
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
-.hero-title {
+.first-title {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
   line-height: 1.2;
 }
 
-.hero-description {
+.first-description {
   font-size: 1.125rem;
   margin-bottom: 2rem;
   color: #d1d5db;
@@ -134,7 +151,7 @@
   margin-right: auto;
 }
 
-.hero-buttons {
+.first-buttons {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -154,32 +171,32 @@
   }
 }
 
-/* Support Section */
-.support-section {
+/* need Section */
+.need-section {
   padding: 4rem 0;
   background-color: white;
 }
 
-.support-grid {
+.need-grid {
   display: grid;
   gap: 3rem;
   align-items: center;
 }
 
-.section-title {
+.need-title {
   font-size: 1.875rem;
   font-weight: 700;
   color: #1f2937;
   margin-bottom: 1.5rem;
 }
 
-.support-text {
+.need-text {
   color: #6b7280;
   margin-bottom: 1.5rem;
   line-height: 1.7;
 }
 
-.support-image {
+.need-image {
   position: relative;
 }
 
@@ -192,58 +209,58 @@
 }
 
 @media (min-width: 768px) {
-  .support-grid {
+  .need-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-/* Programs Section */
-.programs-section {
+/* Service Section */
+.service-section {
   padding: 4rem 0;
   background-color: #fef2f2;
 }
 
-.section-header {
+.service-header {
   text-align: center;
   margin-bottom: 3rem;
 }
 
-.section-description {
+.service-description {
   color: #6b7280;
   max-width: 42rem;
   margin: 0 auto;
 }
 
-.programs-grid {
+.service-grid {
   display: grid;
   gap: 2rem;
 }
 
-.program-card {
+.service-card {
   background-color: white;
   border-radius: 0.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 
-.program-image {
+.service-image {
   width: 100%;
   height: 12rem;
   object-fit: cover;
 }
 
-.program-content {
+.service-content {
   padding: 1.5rem;
 }
 
-.program-title {
+.service-title {
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 0.75rem;
   color: #1f2937;
 }
 
-.program-description {
+.service-description {
   color: #6b7280;
   font-size: 0.875rem;
   line-height: 1.7;
@@ -251,36 +268,36 @@
 }
 
 @media (min-width: 768px) {
-  .programs-grid {
+  .service-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-/* Vision Section */
-.vision-section {
+/* Dream Section */
+.dream-section {
   padding: 4rem 0;
   background-color: #fce7e7;
 }
 
-.vision-grid {
+.dream-grid {
   display: grid;
   gap: 3rem;
   align-items: center;
 }
 
-.vision-content {
+.dream-content {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
-.vision-item {
+.dream-item {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
 }
 
-.vision-number {
+.dream-number {
   width: 2rem;
   height: 2rem;
   background-color: #0d9488;
@@ -295,99 +312,96 @@
   margin-top: 0.25rem;
 }
 
-.vision-title {
+.dream-title {
   font-weight: 600;
   color: #1f2937;
   margin-bottom: 0.5rem;
 }
 
-.vision-description {
+.dream-description {
   color: #6b7280;
   font-size: 0.875rem;
 }
 
 @media (min-width: 768px) {
-  .vision-grid {
+  .dream-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-/* FAQ Section */
-.faq-section {
+/* Question Section */
+.question-section {
   padding: 4rem 0;
   background-color: white;
 }
 
-.faq-grid {
+.question-grid {
   display: grid;
   gap: 3rem;
 }
 
-.faq-description {
+.question-description {
   color: #6b7280;
   line-height: 1.7;
 }
 
-.faq-list {
+.question-list {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.faq-item {
+.question-item {
   background-color: #fef2f2;
   border-radius: 0.5rem;
 }
 
-.faq-button {
+.question-button {
   width: 100%;
   text-align: left;
   padding: 1rem;
   font-weight: 600;
   color: #1f2937;
-  background: none;
-  border: none;
   border-radius: 0.5rem;
   cursor: pointer;
-  transition: background-color 0.2s ease;
   position: relative;
 }
 
-.faq-button:hover {
+.question-button:hover {
   background-color: #fecaca;
 }
 
-.faq-icon {
+.question-icon {
   float: right;
 }
 
 @media (min-width: 768px) {
-  .faq-grid {
+  .question-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-/* Fundraising Section */
-.fundraising-section {
+/* Donate Section */
+.donate-section {
   padding: 4rem 0;
   background-color: #1f2937;
   color: white;
   text-align: center;
 }
 
-.fundraising-content {
+.donate-content {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
-.fundraising-title {
+.donate-title {
   font-size: 1.875rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
 
-.fundraising-description {
+.donate-description {
   color: #d1d5db;
   margin-bottom: 2rem;
   max-width: 42rem;
@@ -395,21 +409,21 @@
   margin-right: auto;
 }
 
-.progress-indicators {
+.donate-indicators {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
   margin-bottom: 2rem;
 }
 
-.progress-dot {
+.donate-dot {
   width: 0.75rem;
   height: 0.75rem;
   border-radius: 50%;
   background-color: #6b7280;
 }
 
-.progress-dot.active {
+.donate-dot.active {
   background-color: white;
 }
 
